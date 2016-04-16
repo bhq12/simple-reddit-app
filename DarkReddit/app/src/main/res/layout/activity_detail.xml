@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/comment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="comments"
+            android:textSize="15dp"
+            android:background="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="LOADING..."
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/comment_button"/>
+
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:text="test title"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/comment_button"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <WebView
+            android:id="@+id/webV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></WebView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            />
+        </RelativeLayout>
+
+
+    </LinearLayout>

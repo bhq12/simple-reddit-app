@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000000"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            >
+
+        <Button
+            android:id="@+id/main_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#000000"
+            android:textColor="#FFFFFF"
+            android:text="@string/button" />
+
+        <!-- Displays keyboard when touched -->
+        <AutoCompleteTextView
+            android:id="@+id/main_auto_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/main_button"
+            android:layout_alignParentLeft="true"
+            android:imeOptions="actionSearch"
+            android:textColor="#FFFFFF"
+            android:inputType="text"
+            android:background="#000000"
+            android:hint="@string/hint" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/refresh_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/refresh"/>
+
+        <Button
+            android:id="@+id/hotSort"
+            android:text="hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sorting_button"
+            />
+
+        <Button
+            android:id="@+id/newSort"
+            android:text="new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sorting_button"
+            />
+
+        <Button
+            android:id="@+id/topSort"
+            android:text="top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sorting_button"
+            />
+
+        <Button
+            android:id="@+id/risingSort"
+            android:text="rising"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sorting_button"
+            />
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/main_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/adView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            />
+
+
+
+        </RelativeLayout>
+
+
+
+</LinearLayout>

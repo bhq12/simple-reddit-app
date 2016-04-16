@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dark Reddit</string>
+    <string name="textview">Search for a subreddit!</string>
+    <string name="button">Search</string>
+    <string name="action_settings">action</string>
+    <string name="hint">search for a subreddit!</string>
+    <string name="activity_details">Picture View</string>
+</resources>
